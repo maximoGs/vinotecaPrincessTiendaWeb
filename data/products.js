@@ -1,4 +1,4 @@
-// Catálogo oficial de productos para Paisana Bebidas
+// Catálogo oficial de productos para Vinoteca Princess
 const PRODUCTS_DATA = [
   // ==================== VINOS ====================
   // Varietal: Malbec
@@ -722,7 +722,7 @@ const PRODUCTS_DATA = [
     oldPrice: 20100,
     volume: "Combo Completo",
     alcohol: "39.0%",
-    origin: "Paisana Bebidas Pack",
+    origin: "Princess Special Box",
     rating: 5.0,
     badge: "Super Promo 🔥",
     image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&auto=format&fit=crop&q=80",
@@ -738,7 +738,7 @@ const PRODUCTS_DATA = [
     oldPrice: 31000,
     volume: "Combo Completo",
     alcohol: "47.0%",
-    origin: "Paisana Bebidas Pack",
+    origin: "Princess Special Box",
     rating: 5.0,
     badge: "Exclusivo 🍸",
     image: "https://images.unsplash.com/photo-1527061011665-3652c757a4d4?w=800&auto=format&fit=crop&q=80",
@@ -752,19 +752,19 @@ const PRODUCTS_DATA = [
 // Modifique estos valores para adaptar la tienda a cualquier cliente o vinoteca
 // ==========================================================================
 const STORE_CONFIG = {
-  name: "Paisana Bebidas",
-  tagline: "Vinos de Autor & Bebidas Selectas",
+  name: "Vinoteca Princess",
+  tagline: "Vinos de Alta Gama & Bebidas Selectas",
   whatsappNumber: "5491123456789", // Número internacional sin '+' ni espacios
   phoneFormatted: "+54 9 11 2345-6789",
-  email: "ventas@paisanabebidas.com",
-  address: "Av. Principal 1240, Buenos Aires",
-  instagram: "@paisana.bebidas",
+  email: "ventas@vinotecaprincess.com",
+  address: "Av. Libertador 1840, Buenos Aires",
+  instagram: "@vinoteca.princess",
   instagramUrl: "https://instagram.com",
   schedule: "Lun a Sáb: 10:00 a 00:00 hs | Dom: 17:00 a 23:00 hs",
   deliveryFee: 1500, // Costo de envío estándar
   freeDeliveryThreshold: 35000, // Monto mínimo para envío gratis
   currency: "$",
   minAge: 18, // Edad mínima legal requerida
-  paymentAlias: "PAISANA.BEBIDAS.MP" // Alias para transferencias / Mercado Pago
+  paymentAlias: "VINOTECA.PRINCESS.MP" // Alias para transferencias / Mercado Pago
 };
 

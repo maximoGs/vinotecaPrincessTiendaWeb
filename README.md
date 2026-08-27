@@ -1,33 +1,32 @@
-# Paisana Bebidas - Tienda Online de Vinos de Autor, Cervezas & Bebidas Selectas 🍷🍺
+# Vinoteca Princess - Tienda Online de Vinos de Alta Gama & Bebidas Selectas 🍷👑
 
-Plataforma e-commerce ultra moderna, rápida y responsive diseñada como **producto final listo para ser vendido y administrado** para vinotecas, cervecerías artesanales y tiendas de bebidas.
+Plataforma e-commerce ultra moderna, rápida y responsive diseñada con estética de alta alcurnia en **rojo oscuro real (bordeaux / borgoña) y detalles dorados metalizados**, concebida como **catálogo digital de alta gama listo para operar y vender** vinos de autor, espumantes, destilados premium y boxes exclusivos.
 
 ---
 
-## 🎨 Identidad Visual y Diseño (Basado en Emblema Oficial)
+## 🎨 Identidad Visual y Diseño Real
 
 - **Paleta de Marca Oficial**:
-  - 🌿 **Turquesa Artesanal (Teal)**: `#3ca1a4` / `#58c6c9`
-  - 🌾 **Oro Mostaza Cálido**: `#e5aa38` / `#f6be4e`
-  - 🍷 **Borgoña & Lúpulo Tostado**: `#582029` / `#7b2a37`
-  - 🌑 **Obsidian Slate**: `#0c1017` / `#151e2b`
-- **Logo Vectorial Integrado**: Badge circular artesanal con flor de lúpulo, doble anillo y tipografía serif estilizada (`assets/logo.svg`).
+  - 🍷 **Rojo Oscuro / Borgoña Real (Velvet Bordeaux)**: `#750e20` / `#981930` / `#3a060e`
+  - 👑 **Oro Champagne & Oro Metalizado**: `#d4af37` / `#f5d77f` / `#a1780d`
+  - 🌑 **Bordeaux Nocturno (Deep Cava)**: `#0b0204` / `#130508` / `#1a080d`
+- **Logo Vectorial Integrado**: Emblema heráldico con corona de princesa, copa de cristal con vino tinto, laureles de oro y tipografía romana imperial (`assets/logo.svg`).
 - **Experiencia de Usuario**:
-  - Glassmorphism, micro-animaciones y tipografía editorial (*Cinzel* y *Plus Jakarta Sans*).
-  - Experiencia móvil nativa (Mobile-First) con *Bottom Nav Bar* y Drawer lateral táctil.
+  - Glassmorphism de lujo con finos biseles dorados, micro-animaciones y tipografía editorial (*Cinzel* y *Plus Jakarta Sans*).
+  - Experiencia móvil nativa (Mobile-First) con *Bottom Nav Bar* y Drawer lateral de pedido rápido.
   
 ---
 
 ## 🌟 Características Principales del Producto
 
 - **Estructura de Catálogo por Pestañas y Varietales**:
-  - 🍷 **Vinos**: *Malbec, Cabernet Sauvignon, Blends, Blancos & Chardonnay, Rosados, Espumantes*.
-  - 🍺 **Cervezas & Destilados**: *Cervezas & Lúpulos Artesanales (Session IPA, Bohemian, Roja), Fernet & Aperitivos, Gin Premium, Vodka, Whisky*.
-  - 🥤 **Bebidas sin Alcohol**: *Gaseosas, Tónicas & Mixers, Energizantes, Aguas y Jugos*.
-  - 🍿 **Snacks y Varios**: *Combos Previa, Snacks Salados, Chocolates / Dulces, Hielo & Descartables*.
+  - 🍷 **Vinos & Cava**: *Malbec, Cabernet Sauvignon, Blends & Cortes, Blancos & Chardonnay, Rosados, Espumantes*.
+  - 🥃 **Destilados & Espirituosas**: *Gin Premium, Single Malts, Whisky, Vodka, Fernet & Aperitivos, Cervezas de Selección*.
+  - 🥤 **Bebidas sin Alcohol**: *Mixers botánicos, Tónicas Premium, Gaseosas y Aguas minerales*.
+  - 🎁 **Gourmet & Princess Boxes**: *Princess Boxes, Snacks & Tablas, Chocolates Finos, Hielo & Accesorios*.
 
 - **Comercio & Carrito Inteligente**:
-  - Buscador predictivo en tiempo real.
+  - Buscador en tiempo real por etiquetas, cepas o bodegas.
   - Ordenamiento dinámico por menor/mayor precio, destacados y orden alfabético.
   - Ficha modal de producto con notas de cata, maridaje sugerido, origen y graduación alcohólica.
   - Carrito persistente con `localStorage` y barra de progreso para **Envío Gratis**.
@@ -46,8 +45,4 @@ Plataforma e-commerce ultra moderna, rápida y responsive diseñada como **produ
 El repositorio está optimizado con archivos `_headers` y `_redirects` para **Cloudflare Pages**:
 1. Conectar este repositorio en el panel de **Cloudflare Pages**.
 2. Configurar salida en `/` (raíz) sin comando de build.
-3. Despliegue automático instantáneo con CDN ultra rápida en Argentina y ancho de banda sin límites.
-
-Para ver el instructivo paso a paso de administración y venta, consultar [`CLOUDFLARE_ADMIN_GUIA.md`](file:///c:/Users/Usuario/Desktop/TiendaPlantilla/CLOUDFLARE_ADMIN_GUIA.md).
-
-
+3. Despliegue automático instantáneo con CDN ultra rápida y certificado SSL gratuito.

@@ -1,5 +1,5 @@
 /**
- * PAISANA BEBIDAS - LÓGICA DE APLICACIÓN Y COMERCIO
+ * VINOTECA PRINCESS - LÓGICA DE APLICACIÓN Y COMERCIO
  * Autor: Antigravity AI
  */
 
@@ -8,9 +8,9 @@
 // ==========================================================================
 const SUBCATEGORIES_MAP = {
   vinos: {
-    title: "Vinos de Autor",
+    title: "Vinos de Autor & Alta Gama",
     icon: "fa-solid fa-wine-glass",
-    subtitle: "Explorá nuestras mejores etiquetas seleccionadas por varietal",
+    subtitle: "Explorá nuestras mejores etiquetas seleccionadas por varietal y bodegas boutique",
     subchips: [
       { id: "all", label: "🍷 Todos los Vinos" },
       { id: "malbec", label: "🍇 Malbec" },
@@ -22,22 +22,22 @@ const SUBCATEGORIES_MAP = {
     ]
   },
   bebidas: {
-    title: "Cervezas & Destilados",
-    icon: "fa-solid fa-beer-mug-empty",
-    subtitle: "Cervezas con lúpulos seleccionados, aperitivos, gin premium y espirituosas",
+    title: "Destilados & Espirituosas",
+    icon: "fa-solid fa-bottle-droplet",
+    subtitle: "Selección de gin premium, single malts, whiskies, vodkas y licores finos",
     subchips: [
-      { id: "all", label: "🍺 Todas las Bebidas" },
-      { id: "cervezas", label: "🌿 Cervezas & Lúpulos" },
+      { id: "all", label: "🥃 Todas las Bebidas" },
+      { id: "cervezas", label: "🍺 Cervezas de Selección" },
       { id: "fernet-aperitivos", label: "🦅 Fernet & Aperitivos" },
       { id: "gin", label: "🌿 Gin Premium" },
       { id: "vodka", label: "🧊 Vodka" },
-      { id: "whisky", label: "🥃 Whisky" }
+      { id: "whisky", label: "🥃 Whisky & Bourbon" }
     ]
   },
   "sin-alcohol": {
     title: "Bebidas sin Alcohol",
     icon: "fa-solid fa-bottle-water",
-    subtitle: "Gaseosas, mixers especiales, tónicas, energizantes y aguas",
+    subtitle: "Mixers botánicos, tónicas premium, gaseosas y aguas minerales",
     subchips: [
       { id: "all", label: "🥤 Todo Sin Alcohol" },
       { id: "gaseosas", label: "🥤 Gaseosas" },
@@ -47,15 +47,15 @@ const SUBCATEGORIES_MAP = {
     ]
   },
   snacks: {
-    title: "Snacks & Varios",
+    title: "Gourmet & Princess Boxes",
     icon: "fa-solid fa-bowl-food",
-    subtitle: "Snacks crocantes, chocolates, hielo, descartables y super combos",
+    subtitle: "Boxes exclusivos, chocolates finos, frutos secos, cristalería y accesorios",
     subchips: [
-      { id: "all", label: "🍿 Todos los Snacks" },
-      { id: "promos-combos", label: "🔥 Combos & Promos" },
-      { id: "snacks-salados", label: "🥨 Snacks Salados" },
+      { id: "all", label: "🎁 Todo Gourmet" },
+      { id: "promos-combos", label: "👑 Princess Boxes" },
+      { id: "snacks-salados", label: "🥨 Snacks & Tablas" },
       { id: "chocolates-dulces", label: "🍫 Chocolates & Dulces" },
-      { id: "hielo-descartables", label: "🧊 Hielo & Descartables" }
+      { id: "hielo-descartables", label: "🧊 Hielo & Accesorios" }
     ]
   }
 };
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // CONTROL DE EDAD (+18)
 // ==========================================================================
 function initAgeGate() {
-  const isVerified = sessionStorage.getItem("paisana_age_verified");
+  const isVerified = sessionStorage.getItem("princess_age_verified");
   const ageModal = document.getElementById("ageGateModal");
   const confirmBtn = document.getElementById("confirmAgeBtn");
 
@@ -99,7 +99,7 @@ function initAgeGate() {
 
   if (confirmBtn && ageModal) {
     confirmBtn.addEventListener("click", () => {
-      sessionStorage.setItem("paisana_age_verified", "true");
+      sessionStorage.setItem("princess_age_verified", "true");
       ageModal.classList.remove("active");
       document.body.style.overflow = "";
       showToast("Acceso verificado: Mayor de 18 años");
@@ -603,7 +603,7 @@ function closeProductModal() {
 // ==========================================================================
 function loadCartFromStorage() {
   try {
-    const saved = localStorage.getItem("paisana_cart");
+    const saved = localStorage.getItem("princess_cart");
     if (saved) {
       AppState.cart = JSON.parse(saved);
     }
@@ -614,7 +614,7 @@ function loadCartFromStorage() {
 
 function saveCartToStorage() {
   try {
-    localStorage.setItem("paisana_cart", JSON.stringify(AppState.cart));
+    localStorage.setItem("princess_cart", JSON.stringify(AppState.cart));
   } catch (err) {
     console.error("Error al guardar carrito", err);
   }
@@ -832,8 +832,8 @@ function handleCheckoutSubmit(e) {
   const inquiryCode = `COT-${Date.now().toString().slice(-5)}`;
 
   // Armar Mensaje para WhatsApp con encuadre legal de cotización/disponibilidad
-  let message = `🍷 *SOLICITUD DE DISPONIBILIDAD & COTIZACIÓN*\n`;
-  message += `*Paisana Bebidas* | Ref: #${inquiryCode}\n`;
+  let message = `👑 *SOLICITUD DE DISPONIBILIDAD & PEDIDO*\n`;
+  message += `*Vinoteca Princess* | Ref: #${inquiryCode}\n`;
   message += `━━━━━━━━━━━━━━━━━━━━━\n`;
   message += `👤 *Cliente:* ${name}\n`;
   message += `🛵 *Modalidad:* ${AppState.deliveryMethod === "envio" ? "Envío a Domicilio" : "Retiro en Local"}\n`;
