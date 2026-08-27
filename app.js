@@ -88,18 +88,21 @@ document.addEventListener("DOMContentLoaded", () => {
 // CONTROL DE EDAD (+18)
 // ==========================================================================
 function initAgeGate() {
-  const isVerified = localStorage.getItem("paisana_age_verified");
+  const isVerified = sessionStorage.getItem("paisana_age_verified");
   const ageModal = document.getElementById("ageGateModal");
   const confirmBtn = document.getElementById("confirmAgeBtn");
 
   if (!isVerified && ageModal) {
     ageModal.classList.add("active");
+    document.body.style.overflow = "hidden";
   }
 
-  if (confirmBtn) {
+  if (confirmBtn && ageModal) {
     confirmBtn.addEventListener("click", () => {
-      localStorage.setItem("paisana_age_verified", "true");
+      sessionStorage.setItem("paisana_age_verified", "true");
       ageModal.classList.remove("active");
+      document.body.style.overflow = "";
+      showToast("Acceso verificado: Mayor de 18 años");
     });
   }
 }
